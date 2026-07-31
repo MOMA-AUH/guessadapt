@@ -1,6 +1,6 @@
 # guessadapt
 
-[![Conda Version](https://img.shields.io/conda/vn/MOMA-AUH/guessadapt?cacheSeconds=300)](https://anaconda.org/MOMA-AUH/guessadapt) [![Conda Downloads](https://img.shields.io/conda/dn/MOMA-AUH/guessadapt?cacheSeconds=300)](https://anaconda.org/MOMA-AUH/guessadapt)
+[![Conda Version](https://img.shields.io/conda/vn/MOMA-AUH/guessadapt?cacheSeconds=300&style=for-the-badge)](https://anaconda.org/MOMA-AUH/guessadapt) [![Conda Downloads](https://img.shields.io/conda/dn/MOMA-AUH/guessadapt?cacheSeconds=300&style=for-the-badge)](https://anaconda.org/MOMA-AUH/guessadapt)
 
 Given a FASTQ file and a list of adapter sequences, `guessadapt` counts the reads containing each adapter and returns a sorted list of counts. That's it!
 
