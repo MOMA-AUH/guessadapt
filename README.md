@@ -2,7 +2,7 @@
 
 [![Conda Version](https://img.shields.io/conda/vn/MOMA-AUH/guessadapt?cacheSeconds=300)](https://anaconda.org/MOMA-AUH/guessadapt) [![Conda Downloads](https://img.shields.io/conda/dn/MOMA-AUH/guessadapt?cacheSeconds=300)](https://anaconda.org/MOMA-AUH/guessadapt)
 
-Given a FASTQ file and a list of adapter sequences, `guessadapt` simply counts the number of occurrences of each adapter and returns a sorted list of counts. That's it!
+Given a FASTQ file and a list of adapter sequences, `guessadapt` counts the reads containing each adapter and returns a sorted list of counts. That's it!
 
 ## Installation
 
@@ -30,3 +30,8 @@ options:
                         comma-separated list of adapters (default:
                         AGATCGGAAGAGC,TGGAATTCTCGG,CTGTCTCTTATA)
 ```
+
+Both plain-text FASTQ files and gzip-compressed FASTQ files are supported. The
+input must use the common four-lines-per-record FASTQ layout; malformed or
+truncated records are reported as errors. Output includes every requested
+adapter and is ordered by decreasing count (then alphabetically for ties).
